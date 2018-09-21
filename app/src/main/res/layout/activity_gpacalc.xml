@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GPACalc"
+    tools:layout_editor_absoluteY="25dp"
+    android:id="@+id/applayout">
+
+
+    <TextView
+        android:id="@+id/tvC1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course One"
+        app:layout_constraintBottom_toTopOf="@id/ed1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter grade for course one"
+        app:layout_constraintBottom_toTopOf="@id/tvC2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvC1" />
+
+    <TextView
+        android:id="@+id/tvC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Two"
+        app:layout_constraintBottom_toTopOf="@id/ed2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed1"
+        />
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter grade for course two"
+        app:layout_constraintBottom_toTopOf="@+id/tvC3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvC2" />
+    <TextView
+        android:id="@+id/tvC3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Three"
+        app:layout_constraintBottom_toTopOf="@id/ed3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed2"
+        />
+    <EditText
+        android:id="@+id/ed3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter grade for course three"
+        app:layout_constraintBottom_toTopOf="@+id/tvC4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvC3" />
+    <TextView
+        android:id="@+id/tvC4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Four"
+        app:layout_constraintBottom_toTopOf="@id/ed4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed3"
+        />
+    <EditText
+        android:id="@+id/ed4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter grade for course four"
+        app:layout_constraintBottom_toTopOf="@+id/tvC5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvC4" />
+    <TextView
+        android:id="@+id/tvC5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Five"
+        app:layout_constraintBottom_toTopOf="@id/ed5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed4"
+        />
+    <EditText
+        android:id="@+id/ed5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter grade for course five"
+        app:layout_constraintBottom_toTopOf="@id/tvC6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvC5" />
+    <TextView
+        android:id="@+id/tvC6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your grade will appear here!"
+        app:layout_constraintBottom_toTopOf="@id/btCalculate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed5"
+        />
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute GPA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvC6"
+        android:onClick="calculate"/>
+</android.support.constraint.ConstraintLayout>
